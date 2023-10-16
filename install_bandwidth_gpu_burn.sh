@@ -13,7 +13,3 @@ pushd ./rocm_bandwidth_test/build
 cmake -DCMAKE_MODULE_PATH="$ROOT_DIR/rocm_bandwidth_test/cmake_modules"  \
                ..
 make
-
-export ROCM_BANDWITH_TEST="$ROOT_DIR/rocm_bandwidth_test/build/rocm-bandwith-test"
-export GPU_BURN="$ROOT_DIR/HIP-Examples/gpu-burn/build/gpuburn-hip"
-export LD_LIBRARY_PATH=/opt/rocm/lib
